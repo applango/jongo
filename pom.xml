@@ -27,10 +27,15 @@
     <url>http://www.jongo.org</url>
 
     <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>applangoart-releases</name>
+            <url>${distribution.management.release.local.url}</url>
+        </repository>
         <snapshotRepository>
-            <id>applangoart</id>
+            <id>central</id>
             <name>applangoart-snapshots</name>
-            <url>http://localhost:8081/artifactory/ext-snapshot-local</url>
+            <url>${distribution.management.snapshot.local.url}</url>
         </snapshotRepository>
     </distributionManagement>
 

@@ -413,7 +413,7 @@
             <properties>
                 <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
             </properties>
-            <distributionManagement>
+<!--            <distributionManagement>
                 <repository>
                     <id>cloudbees-release</id>
                     <name>cloudbees-release</name>
@@ -423,6 +423,19 @@
                     <id>cloudbees-snapshot</id>
                     <name>cloudbees-snapshot</name>
                     <url>dav:https://repository-jongo.forge.cloudbees.com/snapshot/</url>
+                </snapshotRepository>
+            </distributionManagement>
+            -->
+            <distributionManagement>
+                <repository>
+                    <id>central</id>
+                    <name>applangoart-releases</name>
+                    <url>${distribution.management.release.local.url}</url>
+                </repository>
+                <snapshotRepository>
+                    <id>central</id>
+                    <name>applangoart-snapshots</name>
+                    <url>${distribution.management.snapshot.local.url}</url>
                 </snapshotRepository>
             </distributionManagement>
             <build>
